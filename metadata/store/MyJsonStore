@@ -1,0 +1,127 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Doc at the Radar Station\",",
+            "        \"title\": \"Hot Head\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Doc at the Radar Station\",",
+            "        \"title\": \"Ashtray Heart\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Doc at the Radar Station\",",
+            "        \"title\": \"A Carrot Is as Close as a Rabbit Gets to a Diamond\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Doc at the Radar Station\",",
+            "        \"title\": \"Run Paint Run Run\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Doc at the Radar Station\",",
+            "        \"title\": \"Sue Egypt\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Ice Cream for Crow\",",
+            "        \"title\": \"Ice Cream for Crow\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Ice Cream for Crow\",",
+            "        \"title\": \"The Host, the Ghost, the Most Holy O\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Ice Cream for Crow\",",
+            "        \"title\": \"Semi-Multicoloured Caucasian\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Ice Cream for Crow\",",
+            "        \"title\": \"Hey Garland, I Dig Your Tweed Coat\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Ice Cream for Crow\",",
+            "        \"title\": \"Evening Bell\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Unconditionally Guaranteed\",",
+            "        \"title\": \"Upon the Me-O-My\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Unconditionally Guaranteed\",",
+            "        \"title\": \"Sugar Bowl\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Unconditionally Guaranteed\",",
+            "        \"title\": \"New Electric Ride\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Unconditionally Guaranteed\",",
+            "        \"title\": \"Magic Be\"",
+            "    },",
+            "    {",
+            "        \"item\": \"list item 1\",",
+            "        \"album\": \"Unconditionally Guaranteed\",",
+            "        \"title\": \"Happy Love Song\"",
+            "    }",
+            "]"
+        ],
+        "model": "Item",
+        "storeId": "MyJsonStore",
+        "designer|userClassName": "MyJsonStore"
+    },
+    "designerId": "d684a0ef-e5c0-4c92-984b-6860655d4681",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "b96d75a6-6b7c-47d1-a51e-8bfc350af370",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "495b6ff0-68ef-4c36-b89e-f614a5b7eda7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.util.Grouper",
+            "reference": {
+                "name": "grouper",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "property": "album"
+            },
+            "designerId": "c688fd5d-5405-4f75-8d90-29af2a4a058c"
+        }
+    ]
+}

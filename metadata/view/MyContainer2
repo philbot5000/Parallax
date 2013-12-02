@@ -1,0 +1,39 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyContainer2",
+        "designer|initialView": true,
+        "layout": "fit"
+    },
+    "designerId": "b9166072-9070-4286-83d3-26222cc16747",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Captain Beefheart"
+            },
+            "designerId": "25b899fe-106e-42d4-9c7d-040b9cddcb78"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "76d14acf-c3c2-44dc-9704-e225160882c4",
+            "masterInstanceId": "79c2e395-f83f-4f50-8e94-45da0966411a"
+        }
+    ]
+}

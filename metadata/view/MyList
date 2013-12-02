@@ -1,0 +1,60 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "style": "background: #f6f6f6;",
+        "designer|userClassName": "MyList",
+        "designer|userAlias": "mylist",
+        "store": "MyJsonStore",
+        "grouped": true
+    },
+    "designerId": "79c2e395-f83f-4f50-8e94-45da0966411a",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div style=\"\">{title}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "16caf8e2-bbc2-4f97-9247-d51585b7a4a8"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListInitialize",
+                "implHandler": [
+                    "/* The image is added via an override and scroll docked to the top.  ",
+                    "** Check the overrides class for the ",
+                    "",
+                    "*/",
+                    "var scroller = component.getScrollable().getScroller(),",
+                    "    image = Ext.ComponentQuery.query('#image')[0];",
+                    "",
+                    "scroller.on('scroll', function(scroll) {",
+                    "    //console.log(scroll.position.y);",
+                    "    image.setStyle('-webkit-transform: translate3d(0px, '+scroll.position.y / 3+'px, 0px);');",
+                    "    //image.setStyle('filter: blur('+scroll.position+'px);');",
+                    "});"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "182b47e2-adfb-4d02-a3f3-4c734923738d"
+        }
+    ]
+}

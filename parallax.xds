@@ -1,0 +1,75 @@
+{
+    "name": "parallax",
+    "settings": {},
+    "xdsVersion": "2.2.3",
+    "xdsBuild": 1044,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch23",
+    "topInstanceFileMap": {
+        "63e80209-61e3-4eca-9c04-a672d089e6e8": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "d684a0ef-e5c0-4c92-984b-6860655d4681": {
+            "paths": [
+                "metadata/store/MyJsonStore",
+                "app/store/override/MyJsonStore.js",
+                "app/store/MyJsonStore.js"
+            ],
+            "className": "MyJsonStore"
+        },
+        "51fba5bd-5962-43ee-92d9-a60179a946f7": {
+            "paths": [
+                "metadata/model/Item",
+                "app/model/override/Item.js",
+                "app/model/Item.js"
+            ],
+            "className": "Item"
+        },
+        "b9166072-9070-4286-83d3-26222cc16747": {
+            "paths": [
+                "metadata/view/MyContainer2",
+                "app/view/override/MyContainer2.js",
+                "app/view/MyContainer2.js"
+            ],
+            "className": "MyContainer2"
+        },
+        "79c2e395-f83f-4f50-8e94-45da0966411a": {
+            "paths": [
+                "metadata/view/MyList",
+                "app/view/override/MyList.js",
+                "app/view/MyList.js"
+            ],
+            "className": "MyList"
+        },
+        "e6e9f55e-408d-423b-a733-167b0eca8c8b": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "b9166072-9070-4286-83d3-26222cc16747",
+            "79c2e395-f83f-4f50-8e94-45da0966411a"
+        ],
+        "store": [
+            "d684a0ef-e5c0-4c92-984b-6860655d4681"
+        ],
+        "controller": [],
+        "model": [
+            "51fba5bd-5962-43ee-92d9-a60179a946f7"
+        ],
+        "resource": [
+            "63e80209-61e3-4eca-9c04-a672d089e6e8",
+            "e6e9f55e-408d-423b-a733-167b0eca8c8b"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
